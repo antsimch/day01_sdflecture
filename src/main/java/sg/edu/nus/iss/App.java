@@ -68,6 +68,15 @@ public class App {
                 System.out.println("Seems like you are a boring person without hobby");
                 break;
         }
+        
+        int i = 0;
+
+        String inputPhrase = console.readLine("Type a phrase: ");
+
+        while (i < inputPhrase.length()) {
+            System.out.println(inputPhrase.substring(0,i));
+            i++;
+        }
 
     }
 }
