@@ -73,10 +73,13 @@ public class App {
 
         String inputPhrase = console.readLine("Type a phrase: ");
 
-        while (i < inputPhrase.length()) {
-            System.out.println(inputPhrase.substring(0,i));
-            i++;
-        }
+        // while (i < inputPhrase.length()) {
+        //     System.out.println(inputPhrase.substring(0,i));
+        //     i++;
+        // }
 
+        for (int j = 0; j < inputPhrase.length(); j++) {
+            System.out.println(inputPhrase.substring(0,j));
+        }
     }
 }
