@@ -81,5 +81,16 @@ public class App {
         for (int j = 0; j < (inputPhrase.length() + 1); j++) {
             System.out.println(inputPhrase.substring(0,j));
         }
+
+        String[] todo = new String[5];
+
+        for (int j = 0; j < todo.length; j++) {
+            String task = console.readLine("Enter To Do Task " + (j + 1) + ":");
+            todo[j] = task;
+        }
+
+        for (int j = 0; j < todo.length; j++) {
+            System.out.println("Task " + (j + 1) + "--> " + todo[j]);
+        }
     }
 }
