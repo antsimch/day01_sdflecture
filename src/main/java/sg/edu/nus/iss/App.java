@@ -27,14 +27,29 @@ public class App {
         String input = console.readLine("What is your hobby? ");
         input = input.trim();
 
-        if (input.equals("swim")) {
-            System.out.println("The nearest swimming pool is Clementi");
-        } else if (input.equals("jog")) {
-            System.out.println("The nearest park is West Coast Park");
-        } else if (input.equals("cycle")) {
-            System.out.println("You could cycle along the PCN");
-        } else {
-            System.out.println("Seems like you are a boring person without hobby");
+        // if (input.equals("swim")) {
+        //     System.out.println("The nearest swimming pool is Clementi");
+        // } else if (input.equals("jog")) {
+        //     System.out.println("The nearest park is West Coast Park");
+        // } else if (input.equals("cycle")) {
+        //     System.out.println("You could cycle along the PCN");
+        // } else {
+        //     System.out.println("Seems like you are a boring person without hobby");
+        // }
+
+        switch(input) {
+            case("swim"):
+                System.out.println("The nearest swimming pool is Clementi");
+                break;
+            case("jog"):
+                System.out.println("The nearest park is West Coast Park");
+                break;
+            case("cycle"):
+                System.out.println("You could cycle along the PCN");
+                break;
+            default:
+                System.out.println("Seems like you are a boring person without hobby");
+                break;
         }
 
     }
