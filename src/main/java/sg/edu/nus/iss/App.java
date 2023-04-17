@@ -92,5 +92,14 @@ public class App {
         for (int j = 0; j < todo.length; j++) {
             System.out.println("Task " + (j + 1) + "--> " + todo[j]);
         }
+
+
+        String strName = "NUS";
+
+        if (args.length > 0) {
+            strName = args[0];
+        }
+
+        System.out.println("Hello " + strName);
     }
 }
